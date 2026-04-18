@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VaultApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/vault_primary</item>
+        <item name="colorPrimaryVariant">@color/vault_surface</item>
+        <item name="colorOnPrimary">@color/vault_text</item>
+        <item name="colorAccent">@color/vault_accent</item>
+        <item name="android:windowBackground">@color/vault_bg</item>
+        <item name="android:textColorPrimary">@color/vault_text</item>
+        <item name="android:textColorSecondary">@color/vault_subtext</item>
+    </style>
+
+    <style name="PinButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/vault_text</item>
+        <item name="strokeColor">@color/vault_accent</item>
+    </style>
+</resources>
