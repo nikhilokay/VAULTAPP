@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VaultPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1A1D2B</item>
+        <item name="colorPrimaryVariant">#1C1E2A</item>
+        <item name="colorOnPrimary">#E8EAED</item>
+        <item name="colorAccent">#4F8EF7</item>
+        <item name="android:windowBackground">#0F1117</item>
+        <item name="android:textColorPrimary">#E8EAED</item>
+        <item name="android:textColorSecondary">#8A8FA8</item>
+    </style>
+    <style name="PinBtn" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">82dp</item>
+        <item name="android:layout_height">82dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#E8EAED</item>
+        <item name="strokeColor">#2A2D3A</item>
+        <item name="android:backgroundTint">#1C1E2A</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:background="#0F1117" android:padding="32dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="🔐" android:textSize="64sp" android:layout_marginBottom="12dp"/>
+
+    <TextView android:id="@+id/tvTitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="My Vault" android:textSize="26sp" android:textStyle="bold"
+        android:textColor="#E8EAED" android:layout_marginBottom="6dp"/>
+
+    <TextView android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Enter PIN" android:textSize="13sp"
+        android:textColor="#8A8FA8" android:layout_marginBottom="36dp"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="36dp">
+        <View android:id="@+id/dot1" android:layout_width="16dp" android:layout_height="16dp"
+            android:background="@drawable/pin_dot" android:layout_margin="10dp" android:alpha="0.25"/>
+        <View android:id="@+id/dot2" android:layout_width="16dp" android:layout_height="16dp"
+            android:background="@drawable/pin_dot" android:layout_margin="10dp" android:alpha="0.25"/>
+        <View android:id="@+id/dot3" android:layout_width="16dp" android:layout_height="16dp"
+            android:background="@drawable/pin_dot" android:layout_margin="10dp" android:alpha="0.25"/>
+        <View android:id="@+id/dot4" android:layout_width="16dp" android:layout_height="16dp"
+            android:background="@drawable/pin_dot" android:layout_margin="10dp" android:alpha="0.25"/>
+    </LinearLayout>
+
+    <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:columnCount="3">
+        <Button android:id="@+id/btn1" style="@style/PinBtn" android:text="1"/>
+        <Button android:id="@+id/btn2" style="@style/PinBtn" android:text="2"/>
+        <Button android:id="@+id/btn3" style="@style/PinBtn" android:text="3"/>
+        <Button android:id="@+id/btn4" style="@style/PinBtn" android:text="4"/>
+        <Button android:id="@+id/btn5" style="@style/PinBtn" android:text="5"/>
+        <Button android:id="@+id/btn6" style="@style/PinBtn" android:text="6"/>
+        <Button android:id="@+id/btn7" style="@style/PinBtn" android:text="7"/>
+        <Button android:id="@+id/btn8" style="@style/PinBtn" android:text="8"/>
+        <Button android:id="@+id/btn9" style="@style/PinBtn" android:text="9"/>
+        <Button android:id="@+id/btnDelete" style="@style/PinBtn" android:text="⌫"/>
+        <Button android:id="@+id/btn0" style="@style/PinBtn" android:text="0"/>
+        <Button android:id="@+id/btnOk" style="@style/PinBtn" android:text="OK"
+            android:backgroundTint="#4F8EF7"/>
+    </GridLayout>
+
+    <Button android:id="@+id/btnBiometric"
+        android:layout_width="wrap_content" android:layout_height="48dp"
+        android:text="👆 Use Fingerprint / Face"
+        android:textColor="#4F8EF7" android:textSize="14sp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

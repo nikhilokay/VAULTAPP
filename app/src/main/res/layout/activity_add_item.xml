@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#0F1117">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="16dp"
+        android:gravity="center_vertical" android:background="#1A1D2B">
+        <ImageButton android:id="@+id/btnBack"
+            android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#4F8EF7"/>
+        <TextView android:id="@+id/tvHeader"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Add Item"
+            android:textSize="18sp" android:textStyle="bold"
+            android:textColor="#E8EAED" android:paddingStart="8dp"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <!-- Category Spinner -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Category" android:textColor="#8A8FA8" android:textSize="12sp"
+                android:layout_marginBottom="6dp"/>
+            <Spinner android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:background="@drawable/input_bg"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Title -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Title *" android:layout_marginBottom="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Subtitle -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutSubtitle"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Subtitle" android:layout_marginBottom="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSubtitle"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Field 1 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutField1"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Field 1" android:layout_marginBottom="12dp"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etField1"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED" android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Field 2 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutField2"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Field 2" android:layout_marginBottom="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etField2"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Field 3 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutField3"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Field 3" android:layout_marginBottom="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etField3"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Field 4 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutField4"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Field 4" android:layout_marginBottom="12dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etField4"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Notes (optional)" android:layout_marginBottom="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNotes"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="#E8EAED" android:minLines="3"
+                    android:gravity="top" android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Color picker -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Color Label" android:textColor="#8A8FA8"
+                android:textSize="12sp" android:layout_marginBottom="10dp"/>
+            <LinearLayout android:id="@+id/colorContainer"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="24dp"/>
+
+            <!-- Save button -->
+            <Button android:id="@+id/btnSave"
+                android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="💾 Save" android:textSize="16sp"
+                android:backgroundTint="#4F8EF7" android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

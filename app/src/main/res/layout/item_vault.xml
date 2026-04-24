@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp" android:layout_marginVertical="6dp"
+    app:cardCornerRadius="16dp" app:cardElevation="2dp"
+    app:cardBackgroundColor="#1C1E2A">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Color accent bar -->
+        <View android:id="@+id/vAccent"
+            android:layout_width="4dp" android:layout_height="match_parent"
+            android:background="#4F8EF7"/>
+
+        <!-- Content -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- Category + actions row -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical"
+                android:layout_marginBottom="6dp">
+                <TextView android:id="@+id/tvIcon"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="18sp" android:layout_marginEnd="6dp"/>
+                <TextView android:id="@+id/tvCategory"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:textSize="10sp"
+                    android:textColor="#8A8FA8" android:letterSpacing="0.1"/>
+                <ImageButton android:id="@+id/btnEdit"
+                    android:layout_width="32dp" android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="#4F8EF7"/>
+                <ImageButton android:id="@+id/btnDelete"
+                    android:layout_width="32dp" android:layout_height="32dp"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="#FF5555"/>
+            </LinearLayout>
+
+            <!-- Title -->
+            <TextView android:id="@+id/tvTitle"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textStyle="bold"
+                android:textColor="#E8EAED" android:layout_marginBottom="3dp"/>
+
+            <!-- Subtitle -->
+            <TextView android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="13sp" android:textColor="#8A8FA8"
+                android:layout_marginBottom="8dp" android:fontFamily="monospace"/>
+
+            <!-- Password row -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/tvField1Label"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="10sp" android:textColor="#8A8FA8"/>
+                    <TextView android:id="@+id/tvField1"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textSize="13sp" android:textColor="#E8EAED"
+                        android:fontFamily="monospace"/>
+                </LinearLayout>
+
+                <Button android:id="@+id/btnShow"
+                    android:layout_width="wrap_content" android:layout_height="28dp"
+                    android:text="Show" android:textSize="11sp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:backgroundTint="#1A2D1A"
+                    android:textColor="#22C55E" android:layout_marginEnd="6dp"/>
+
+                <Button android:id="@+id/btnCopy"
+                    android:layout_width="wrap_content" android:layout_height="28dp"
+                    android:text="Copy" android:textSize="11sp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:backgroundTint="#1C2D4A"
+                    android:textColor="#4F8EF7"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
